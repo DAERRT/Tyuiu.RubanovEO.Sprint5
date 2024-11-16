@@ -22,9 +22,9 @@ namespace Tyuiu.RubanovEO.Sprint5.Task1.V15.Lib
                     ans = 0;
                 }
                 try{ File.AppendAllText(filePath, $"{ans}\n"); }catch (Exception ex) { }
-                ans1 += $"{ans} ";
+                ans1 += $"{ans}\n";
             }
-            return ans1.Trim();
+            return ans1;
         }
     }
 }
