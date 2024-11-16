@@ -14,7 +14,7 @@ namespace Tyuiu.RubanovEO.Sprint5.Task0.V4.Test
         {
             DataService ds = new DataService();
             Assert.That(ds.SaveToFileTextData(2), Is.EqualTo("13"));
-            Assert.That(File.ReadAllText("OutPutFileTask0.txt"), Is.EqualTo("13"));
+            Assert.That(File.ReadAllText(@"C:\Users\olego\source\repos\Tyuiu.RubanovEO.Sprint5\OutPutFileTask0.txt"), Is.EqualTo("13"));
         }
     }
 }
