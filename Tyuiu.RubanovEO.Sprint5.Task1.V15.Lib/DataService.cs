@@ -24,7 +24,7 @@ namespace Tyuiu.RubanovEO.Sprint5.Task1.V15.Lib
                 try{ File.AppendAllText(filePath, $"{ans}\n"); }catch (Exception ex) { }
                 ans1 += $"{ans}\n";
             }
-            return ans1;
+            return ans1.TrimEnd(['/', 'n']);
         }
     }
 }
