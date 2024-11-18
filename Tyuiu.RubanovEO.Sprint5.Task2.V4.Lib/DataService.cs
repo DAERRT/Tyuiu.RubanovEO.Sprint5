@@ -20,7 +20,7 @@ namespace Tyuiu.RubanovEO.Sprint5.Task2.V4.Lib
                     {
                         matrix[i, j] = 0;
                     }
-                    File.WriteAllText(filePath, Convert.ToString(matrix[i,j]));
+                    try{ File.WriteAllText(filePath, Convert.ToString(matrix[i, j])); }catch (Exception ex) { }
                 }
             }
             return filePath;
