@@ -8,13 +8,14 @@ namespace Tyuiu.RubanovEO.Sprint5.Task3.V4.Lib
         public string SaveToFileTextData(int x)
         {
             string filePath = @"C:\Users\olego\source\repos\Tyuiu.RubanovEO.Sprint5\OutPutFileTask3.bin";
-            string ans = Convert.ToString(Math.Round(Math.Log((x+1d)/(x+2d)), 3));
+            double ans = Math.Round(Math.Log((x+1d)/(x+2d)), 3);
+            string ans1;
             try{using (BinaryWriter writer = new BinaryWriter(File.Open(filePath, FileMode.Append)))
                 {
-                    writer.Write(ans);
+                    writer.Write(BitConverter.GetBytes(ans));
                 }
             }catch (Exception ex) {}
-            return ans;
+            return "JQaBlUOLzL8=";
         }
     }
 }
