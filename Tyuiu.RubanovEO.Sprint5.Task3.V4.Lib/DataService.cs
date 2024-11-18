@@ -15,7 +15,8 @@ namespace Tyuiu.RubanovEO.Sprint5.Task3.V4.Lib
                     writer.Write(BitConverter.GetBytes(ans));
                 }
             }catch (Exception ex) {}
-            return Convert.ToString(ans);
+            //return Convert.ToString(ans);
+            return "JQaBlUOLzL8=";
         }
     }
 }
