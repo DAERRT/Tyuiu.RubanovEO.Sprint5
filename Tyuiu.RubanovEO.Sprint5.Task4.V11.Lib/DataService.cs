@@ -7,7 +7,6 @@ namespace Tyuiu.RubanovEO.Sprint5.Task4.V11.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            //string filePath = "InPutDataFileTask4V11.txt";
             double x = double.Parse(File.ReadAllText(path));
             return Math.Round(Math.Sin(x) + (Math.Pow(x,2)/2),3);
         }
