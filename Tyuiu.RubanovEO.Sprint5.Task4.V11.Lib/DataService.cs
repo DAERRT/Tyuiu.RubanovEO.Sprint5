@@ -8,7 +8,7 @@ namespace Tyuiu.RubanovEO.Sprint5.Task4.V11.Lib
         public double LoadFromDataFile(string path)
         {
             double x = Convert.ToDouble(File.ReadAllText(path));
-            return Math.Round(Math.Sin(x) + (Math.Pow(x,2)/2),3);
+            return Math.Round(Math.Sin(x) + (Math.Pow(x,2d)/2d),3);
         }
     }
 }
