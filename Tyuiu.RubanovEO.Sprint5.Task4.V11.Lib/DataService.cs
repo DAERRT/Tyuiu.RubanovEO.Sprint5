@@ -1,4 +1,5 @@
 ﻿
+using System.Linq;
 using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.RubanovEO.Sprint5.Task4.V11.Lib
@@ -14,11 +15,11 @@ namespace Tyuiu.RubanovEO.Sprint5.Task4.V11.Lib
                 if (chars[i] == '.')
                 {
                     chars[i] = ',';
-                    b.Append(chars[i]);
+                    b += Convert.ToString(chars[i]);
                 }
                 else
                 {
-                    b.Append(chars[i]);
+                    b += Convert.ToString(chars[i]);
                 }
             }
             double x = double.Parse(b);
