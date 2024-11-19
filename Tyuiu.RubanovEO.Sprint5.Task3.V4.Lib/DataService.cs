@@ -56,6 +56,9 @@ namespace Tyuiu.RubanovEO.Sprint5.Task3.V4.Lib
 
 
             //return ans_string + "\n" + ans_read_all_text_from_file + "\n" + ans_binaryreader + "\n" + ans_1;
+
+
+
             double y = Math.Round(Math.Log((x + 1) / (x + 2)), 3);
 
             // Преобразование значения y в байты (бинарный вид)
