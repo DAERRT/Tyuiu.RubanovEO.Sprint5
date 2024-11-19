@@ -1,5 +1,4 @@
 ﻿
-using System.Linq;
 using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.RubanovEO.Sprint5.Task4.V11.Lib
