@@ -62,7 +62,7 @@ namespace Tyuiu.RubanovEO.Sprint5.Task3.V4.Lib
             byte[] bytes = BitConverter.GetBytes(y);
 
             // Запись байтов в бинарный файл
-            string filePath = "OutPutFileTask3.bin";
+            string filePath = Path.GetTempFileName(); ;
             using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write))
             {
                 fs.Write(bytes, 0, bytes.Length);
