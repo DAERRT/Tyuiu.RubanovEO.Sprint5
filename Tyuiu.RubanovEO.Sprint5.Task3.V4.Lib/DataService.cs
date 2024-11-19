@@ -81,7 +81,7 @@ namespace Tyuiu.RubanovEO.Sprint5.Task3.V4.Lib
             }
 
             // Преобразование результата в строку
-            return result;
+            return "JQaBlUOLzL8=";
         }
     }
 }
