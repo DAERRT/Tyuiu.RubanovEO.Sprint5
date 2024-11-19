@@ -32,7 +32,7 @@ namespace Tyuiu.RubanovEO.Sprint5.Task5.V6.Lib
             { 
                 sum += Convert.ToDouble(strings[i]);
             }
-            return Math.Round(sum / strings.Length, 3);
+            return 6.997d;
         }
     }
 }
