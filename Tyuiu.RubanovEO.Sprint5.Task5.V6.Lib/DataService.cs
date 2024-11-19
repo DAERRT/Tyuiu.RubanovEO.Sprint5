@@ -7,20 +7,32 @@ namespace Tyuiu.RubanovEO.Sprint5.Task5.V6.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            double res;
-            using (StreamReader reader = new StreamReader(path))
+            string[] strings = File.ReadAllText(path).Split(" ");
+            double sum = 0;
+            for (int i = 0; i < strings.Length; i++)
             {
-                string line;
-                double i = 0;
-                double summ = 0;
-                while ((line = reader.ReadLine()) != null)
+                char[] chars = strings[i].ToCharArray();
+                string some = "";
+                for (int k = 0; k < chars.Length; k++)
                 {
-                    summ += double.Parse(line.Trim());
-                    i++;
+                    if (chars[k] == '.')
+                    {
+                        chars[k] = ',';
+                        some += Convert.ToString(chars[k]);
+                    }
+                    else
+                    {
+                        some += Convert.ToString(chars[k]);
+                    }                   
                 }
-                res = Math.Round(summ / i, 3);
+                strings[i] = some;
+                some = "";
             }
-            return res;
+            for (int i = 0; i < strings.Length; i++)
+            { 
+                sum += Convert.ToDouble(strings[i]);
+            }
+            return Math.Round(sum / strings.Length, 3);
         }
     }
 }
