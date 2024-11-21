@@ -25,7 +25,7 @@ namespace Tyuiu.RubanovEO.Sprint5.Task7.V25.Lib
             {
                 if (i != asd.Length-1)
                 {   
-                    if (asd[i] == ' ' && asd[i + 1] == ' ')
+                    if ((asd[i] == ' ' && asd[i + 1] == ' ') || (asd[i] == ' ' && asd[i + 1] == '.'))
                     {
                         
                     }
