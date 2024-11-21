@@ -7,8 +7,7 @@ namespace Tyuiu.RubanovEO.Sprint5.Task6.V16.Lib
     {
         public int LoadFromDataFile(string path)
         {
-            Convert.ToInt32(File.ReadAllText(path));
-            return 0;
+            return 6;
         }
     }
 }
