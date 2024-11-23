@@ -9,7 +9,7 @@ namespace Tyuiu.RubanovEO.Sprint5.Task3.V4.Lib
         {
             double y = Math.Round(Math.Log((x + 1) / (x + 2)), 3);
 
-            string filePath = Path.GetTempFileName();
+            string filePath = $@"{Path.GetTempPath()}OutPutFileTask3.bin";
 
             using (BinaryWriter writer = new BinaryWriter(File.Open(filePath, FileMode.OpenOrCreate)))
             {
