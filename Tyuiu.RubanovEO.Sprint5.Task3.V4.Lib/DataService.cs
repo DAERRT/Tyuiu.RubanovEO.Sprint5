@@ -9,12 +9,11 @@ namespace Tyuiu.RubanovEO.Sprint5.Task3.V4.Lib
         {
             double y = Math.Round(Math.Log((x + 1) / (x + 2)), 3);
 
-            byte[] bytes = BitConverter.GetBytes(y);
+            string filePath = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask3.bin";
 
-            string filePath = Path.GetTempFileName(); 
-            using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+            using (BinaryWriter writer = new BinaryWriter(File.Open(filePath, FileMode.OpenOrCreate)))
             {
-                fs.Write(bytes, 0, bytes.Length);
+                writer.Write(BitConverter.GetBytes(y));
             }
 
             return filePath;
