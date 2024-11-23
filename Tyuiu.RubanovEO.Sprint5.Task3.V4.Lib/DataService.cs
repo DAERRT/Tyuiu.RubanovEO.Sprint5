@@ -7,7 +7,7 @@ namespace Tyuiu.RubanovEO.Sprint5.Task3.V4.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            double y = Math.Round(Math.Log((x + 1) / (x + 2)), 3);
+            double y = Math.Round(Math.Log((x + 1d) / (x + 2d)), 3);
 
             string filePath = $@"{Path.GetTempPath()}OutPutFileTask3.bin";
 
